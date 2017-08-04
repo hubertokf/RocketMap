@@ -5,7 +5,6 @@
 *.sass-cache
 *.orig
 *.json
-static/dist/
 venv/
 core
 src/
