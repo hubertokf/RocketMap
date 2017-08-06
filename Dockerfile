@@ -31,9 +31,9 @@ COPY static /usr/src/app/static
 RUN apt-get update && apt-get install -y --no-install-recommends build-essential curl unzip \
  && curl -sL https://deb.nodesource.com/setup_6.x | bash - \
  && apt-get install -y --no-install-recommends nodejs \
- && npm install \
- && npm run build \
- && rm -rf node_modules \
+ #&& npm install \
+ #&& npm run build \
+ #&& rm -rf node_modules \
  && apt-get purge -y --auto-remove build-essential nodejs \
  && rm -rf /var/lib/apt/lists/*
 
