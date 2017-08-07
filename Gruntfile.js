@@ -90,11 +90,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        clean: {
-            build: {
-                src: 'static/dist'
-            }
-        },
         watch: {
             options: {
                 interval: 1000,
@@ -131,16 +126,9 @@ module.exports = function (grunt) {
         },
         unzip: {
             'static01': {
-                router: function (filepath) {
-                    if (fs.existsSync('static/' + filepath)) {
-                        return null
-                    }
-
-                    return filepath
-                },
 
                 src: 'static01.zip',
-                dest: 'static/'
+                dest: 'static2/'
             }
         }
 
@@ -151,7 +139,7 @@ module.exports = function (grunt) {
     grunt.registerTask('js-lint', ['newer:eslint'])
     grunt.registerTask('json', ['newer:minjson'])
 
-    grunt.registerTask('build', ['clean', 'js-build', 'css-build', 'json', 'unzip'])
+    grunt.registerTask('build', ['js-build', 'css-build', 'json', 'unzip'])
     grunt.registerTask('lint', ['js-lint'])
     grunt.registerTask('default', ['build', 'watch'])
 }
