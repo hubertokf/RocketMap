@@ -207,8 +207,8 @@ def main():
     config['parse_raids'] = not args.no_raids
 
     # Let's not forget to run Grunt / Only needed when running with webserver.
-    if not args.no_server and not validate_assets(args):
-        sys.exit(1)
+    # if not args.no_server and not validate_assets(args):
+    #     sys.exit(1)
 
     # Use lat/lng directly if matches such a pattern.
     prog = re.compile("^(\-?\d+\.\d+),?\s?(\-?\d+\.\d+)$")
