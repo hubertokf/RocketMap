@@ -90,6 +90,11 @@ module.exports = function (grunt) {
                 }
             }
         },
+        clean: {
+            build: {
+                src: 'static/dist'
+            }
+        },
         watch: {
             options: {
                 interval: 1000,
@@ -126,9 +131,16 @@ module.exports = function (grunt) {
         },
         unzip: {
             'static01': {
+                router: function (filepath) {
+                    if (fs.existsSync('static/' + filepath)) {
+                        return null
+                    }
+
+                    return filepath
+                },
 
                 src: 'static01.zip',
-                dest: 'static2/'
+                dest: 'static/'
             }
         }
 
