@@ -1,1 +1,1 @@
-web: python runserver.py -ac accounts.csv -k AIzaSyCMVa3D2MtonTbr9bBhJQjQFOFNAXy1XcU -hk 0U9V2D0B8Z5K1S0A8G7M --speed-scan -l "Pelotas, BR" -st 45 -cs -spin -H 0.0.0.0 -P $PORT -spp 99766330
+web: python runserver.py -ac accounts.csv -k AIzaSyCMVa3D2MtonTbr9bBhJQjQFOFNAXy1XcU -hk 0U9V2D0B8Z5K1S0A8G7M --speed-scan -l "Pelotas, BR" -st 45 -cs -spin -H 0.0.0.0 -P $PORT -spp 99766330 --db-type sqlite
