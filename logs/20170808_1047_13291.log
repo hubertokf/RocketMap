@@ -1,0 +1,80 @@
+2017-08-08 10:47:27,419 [        MainThread][     runserver][    INFO] No file "custom.css" found, using default settings.
+2017-08-08 10:47:27,420 [        MainThread][     runserver][    INFO] No file "custom.js" found, using default settings.
+2017-08-08 10:47:28,907 [        MainThread][     utilities][    INFO] Location for 'Pelotas, BR' found: Pelotas - Princesa, Pelotas - RS, Brazil
+2017-08-08 10:47:28,908 [        MainThread][     utilities][    INFO] Coordinates (lat/long/alt) for location: -31.7653989 -52.3375886 0.0
+2017-08-08 10:47:30,825 [        MainThread][     runserver][    INFO] Parsed location is: -31.7654/-52.3376/11.8924 (lat/lng/alt)
+2017-08-08 10:47:30,831 [        MainThread][           app][    INFO] Retrieving blacklist...
+2017-08-08 10:47:38,354 [        MainThread][        models][    INFO] Connecting to local SQLite database
+2017-08-08 10:47:38,369 [        MainThread][        models][    INFO] Creating table: Pokemon
+2017-08-08 10:47:38,388 [        MainThread][        models][    INFO] Creating table: Pokestop
+2017-08-08 10:47:38,405 [        MainThread][        models][    INFO] Creating table: Gym
+2017-08-08 10:47:38,414 [        MainThread][        models][    INFO] Creating table: Raid
+2017-08-08 10:47:38,429 [        MainThread][        models][    INFO] Creating table: ScannedLocation
+2017-08-08 10:47:38,435 [        MainThread][        models][    INFO] Creating table: GymDetails
+2017-08-08 10:47:38,438 [        MainThread][        models][    INFO] Creating table: GymMember
+2017-08-08 10:47:38,447 [        MainThread][        models][    INFO] Creating table: GymPokemon
+2017-08-08 10:47:38,455 [        MainThread][        models][    INFO] Creating table: Trainer
+2017-08-08 10:47:38,459 [        MainThread][        models][    INFO] Creating table: MainWorker
+2017-08-08 10:47:38,467 [        MainThread][        models][    INFO] Creating table: WorkerStatus
+2017-08-08 10:47:38,480 [        MainThread][        models][    INFO] Creating table: SpawnPoint
+2017-08-08 10:47:38,492 [        MainThread][        models][    INFO] Creating table: ScanSpawnPoint
+2017-08-08 10:47:38,503 [        MainThread][        models][    INFO] Creating table: SpawnpointDetectionData
+2017-08-08 10:47:38,510 [        MainThread][        models][    INFO] Creating table: Token
+2017-08-08 10:47:38,516 [        MainThread][        models][    INFO] Creating table: LocationAltitude
+2017-08-08 10:47:38,525 [        MainThread][        models][    INFO] Creating table: PlayerLocale
+2017-08-08 10:47:38,529 [        MainThread][        models][    INFO] Creating table: HashKeys
+2017-08-08 10:47:38,540 [        MainThread][     runserver][    INFO] Webhook disabled.
+2017-08-08 10:47:38,541 [        MainThread][         proxy][    INFO] No proxies are configured.
+2017-08-08 10:47:38,541 [        MainThread][     runserver][    INFO] Periodical proxies refresh disabled.
+2017-08-08 10:47:38,548 [        db-cleaner][        models][    INFO] Regular database cleaning complete.
+2017-08-08 10:47:40,370 [        MainThread][         utils][   ERROR] Exception on Google Timezone API. Please check that you have Google Timezone API enabled for your API key (https://developers.google.com/maps/documentation/timezone/intro): geopy could not find a timezone in this response: {u'status': u'REQUEST_DENIED', u'errorMessage': u'This API project is not authorized to use this API. Please ensure this API is activated in the Google Developers Console: https://console.developers.google.com/apis/api/timezone_backend?project=_'}.
+Traceback (most recent call last):
+  File "/home/huberto/Downloads/RocketMap/pogom/utils.py", line 1037, in gmaps_reverse_geolocate
+    timezone = geolocator.timezone(location)
+  File "/usr/local/lib/python2.7/dist-packages/geopy/geocoders/googlev3.py", line 329, in timezone
+    response
+GeocoderParseError: geopy could not find a timezone in this response: {u'status': u'REQUEST_DENIED', u'errorMessage': u'This API project is not authorized to use this API. Please ensure this API is activated in the Google Developers Console: https://console.developers.google.com/apis/api/timezone_backend?project=_'}
+2017-08-08 10:47:40,377 [   search-overseer][        search][    INFO] Search overseer starting...
+2017-08-08 10:47:40,378 [   search-overseer][        search][    INFO] Added 0 accounts to the L30 pool.
+2017-08-08 10:47:40,379 [   search-overseer][        search][    INFO] Enabling hashing key scheduler...
+2017-08-08 10:47:40,380 [   search-overseer][        search][    INFO] Starting account recycler thread...
+2017-08-08 10:47:40,382 [   search-overseer][        search][    INFO] Starting captcha overseer thread...
+2017-08-08 10:47:40,383 [   search-overseer][        search][    INFO] Starting status database thread...
+2017-08-08 10:47:40,391 [   search-overseer][        search][    INFO] Starting search worker threads...
+2017-08-08 10:47:40,391 [   search-overseer][        search][    INFO] Configured scheduler is SpeedScan.
+2017-08-08 10:47:40,396 [   search-overseer][        search][    INFO] Enabling new API force Watchdog.
+2017-08-08 10:47:40,397 [   search-overseer][        search][    INFO] New location caught, moving search grid.
+2017-08-08 10:47:41,056 [   search-overseer][    schedulers][    INFO] 61 steps created
+2017-08-08 10:47:41,061 [   search-overseer][    schedulers][    INFO] Initial spawnpoint scan, 0 of 305 bands are done or 0.0% complete
+2017-08-08 10:47:41,062 [   search-overseer][    schedulers][    INFO] No spawnpoints in hex found in SpawnPoint table. Doing initial scan.
+2017-08-08 10:47:41,062 [   search-overseer][    schedulers][    INFO] Found 0 spawn points within hex
+2017-08-08 10:47:41,062 [   search-overseer][    schedulers][    INFO] Doing 0 distance calcs to assign spawn points to scans
+2017-08-08 10:47:41,063 [   search-overseer][    schedulers][    INFO] Spawn points assigned
+2017-08-08 10:47:41,063 [   search-overseer][    schedulers][    INFO] Refreshing queue
+2017-08-08 10:47:41,091 [   search-overseer][    schedulers][    INFO] New queue created with 61 entries in 0.028324 seconds
+2017-08-08 10:47:41,398 [   search-worker-0][        search][    INFO] Waiting to get new account from the queue...
+2017-08-08 10:47:41,403 [   search-worker-0][        search][    INFO] Switching to account Ripchip01.
+2017-08-08 10:47:47,454 [   search-worker-0][      auth_ptc][    INFO] PTC User Login for: Ripchip01
+2017-08-08 10:47:50,464 [   search-worker-0][      auth_ptc][    INFO] PTC User Login successful.
+2017-08-08 10:48:38,611 [        db-cleaner][        models][    INFO] Regular database cleaning complete.
+2017-08-08 10:48:40,441 [  account-recycler][        search][    INFO] Account recycler running. Checking status of 0 accounts.
+2017-08-08 10:48:51,252 [   search-worker-0][       account][    INFO] RPC login sequence for account Ripchip01 successful with 32 requests.
+2017-08-08 10:49:03,129 [   search-worker-0][        search][    INFO] Scanning step 0 for a band.
+2017-08-08 10:49:03,780 [   search-worker-0][        models][ WARNING] No nearby or wild Pokemon but there are visible gyms or pokestops. Possible speed violation.
+2017-08-08 10:49:03,787 [   search-worker-0][        models][    INFO] Parsing found Pokemon: 0 (0 filtered), nearby: 0, pokestops: 23, gyms: 4, raids: 4.
+2017-08-08 10:49:03,793 [   search-worker-0][    schedulers][    INFO] Putting back step 0 in queue
+2017-08-08 10:49:13,786 [   search-worker-0][        search][    INFO] Scanning step 0 for a band.
+2017-08-08 10:49:15,025 [   search-worker-0][        models][    INFO] New Spawn Point found.
+2017-08-08 10:49:15,026 [   search-worker-0][        models][    INFO] New Spawn Point found.
+2017-08-08 10:49:15,029 [   search-worker-0][        models][    INFO] Parsing found Pokemon: 2 (0 filtered), nearby: 27, pokestops: 23, gyms: 4, raids: 4.
+2017-08-08 10:49:29,470 [   search-worker-0][        search][    INFO] Scanning step 4 for a band.
+2017-08-08 10:49:31,245 [   search-worker-0][        models][ WARNING] Bad scan. Parsing found absolutely nothing.
+2017-08-08 10:49:31,248 [   search-worker-0][        models][    INFO] Common causes: captchas or IP bans.
+2017-08-08 10:49:31,251 [   search-worker-0][        models][    INFO] Parsing found Pokemon: 0 (0 filtered), nearby: 0, pokestops: 0, gyms: 0, raids: 0.
+2017-08-08 10:49:31,256 [   search-worker-0][    schedulers][    INFO] Putting back step 4 in queue
+2017-08-08 10:49:38,670 [        db-cleaner][        models][    INFO] Regular database cleaning complete.
+2017-08-08 10:49:40,500 [  account-recycler][        search][    INFO] Account recycler running. Checking status of 0 accounts.
+2017-08-08 10:49:41,256 [   search-worker-0][        search][    INFO] Scanning step 4 for a band.
+2017-08-08 10:49:42,222 [   search-worker-0][        models][ WARNING] No nearby or wild Pokemon but there are visible gyms or pokestops. Possible speed violation.
+2017-08-08 10:49:42,225 [   search-worker-0][        models][    INFO] Parsing found Pokemon: 0 (0 filtered), nearby: 0, pokestops: 24, gyms: 5, raids: 5.
+2017-08-08 10:49:42,227 [   search-worker-0][    schedulers][    INFO] Putting back step 4 in queue

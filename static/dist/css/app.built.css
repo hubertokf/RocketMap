@@ -1524,6 +1524,10 @@ button,
     .button {
       padding: 0 0.5em; } }
 
+/* Set proper defaults for sweetalert buttons. */
+.sweet-alert button {
+  line-height: initial; }
+
 /* Grid Demo */
 .grid-demo {
   display: block;
@@ -4202,7 +4206,24 @@ body {
     margin-bottom: 5px; }
     @media screen and (max-width: 480px) {
       #gym-details .raid {
-        font-size: 11px !important; } }
+        font-size: 10px !important; } }
+    @media screen and (max-width: 320px) {
+      #gym-details .raid {
+        font-size: 9px !important; } }
+    @media screen and (max-width: 480px) {
+      #gym-details .raid {
+        margin-bottom: 0px !important; } }
+    #gym-details .raid.container {
+      display: flex;
+      justify-content: center; }
+      #gym-details .raid.container.content-left {
+        width: 96px; }
+        @media screen and (max-width: 480px) {
+          #gym-details .raid.container.content-left {
+            width: 64px !important; } }
+      #gym-details .raid.container.content-right {
+        margin-bottom: auto;
+        margin-top: auto; }
     #gym-details .raid.countdown:before {
       content: '\f017';
       display: inline-block;
@@ -4214,10 +4235,73 @@ body {
       @media screen and (max-width: 480px) {
         #gym-details .raid.countdown:before {
           margin: 0px -2px 0px -2px !important; } }
-    #gym-details .raid.encounter {
-      font-weight: 500; }
-      #gym-details .raid.encounter.info {
-        font-weight: 900; }
+    #gym-details .raid.pokemon {
+      font-size: 16px;
+      font-weight: 900;
+      float: left; }
+    #gym-details .raid .move .name {
+      font-size: 14px;
+      float: left;
+      clear: left;
+      margin: 0px 5px 5px 10px; }
+      @media screen and (max-width: 480px) {
+        #gym-details .raid .move .name {
+          font-size: 10px !important;
+          margin: 0px 0px 2px 0px !important; } }
+      @media screen and (max-width: 320px) {
+        #gym-details .raid .move .name {
+          font-size: 9px !important; } }
+    @media screen and (max-width: 480px) {
+      #gym-details .raid .move {
+        font-size: 6px !important; } }
+    #gym-details .raid .move .type {
+      margin: 0px 0px 5px 0px;
+      font-size: 10px;
+      padding: 0px 5px;
+      border-radius: 4px;
+      color: white;
+      float: right;
+      clear: right; }
+      @media screen and (max-width: 480px) {
+        #gym-details .raid .move .type {
+          font-size: 6px !important;
+          margin: 0px 0px 2px 0px !important; } }
+      #gym-details .raid .move .type.fairy {
+        background-color: #e898e8; }
+      #gym-details .raid .move .type.ghost {
+        background-color: #705898; }
+      #gym-details .raid .move .type.normal {
+        background-color: #8a8a59; }
+      #gym-details .raid .move .type.grass {
+        background-color: #78c850; }
+      #gym-details .raid .move .type.water {
+        background-color: #6890f0; }
+      #gym-details .raid .move .type.bug {
+        background-color: #a8b820; }
+      #gym-details .raid .move .type.fighting {
+        background-color: #c03028; }
+      #gym-details .raid .move .type.electric {
+        background-color: #f8d030; }
+      #gym-details .raid .move .type.rock {
+        background-color: #b8a038; }
+      #gym-details .raid .move .type.fire {
+        background-color: #f08030; }
+      #gym-details .raid .move .type.flying {
+        background-color: #a890f0; }
+      #gym-details .raid .move .type.ice {
+        background-color: #98d8d8; }
+      #gym-details .raid .move .type.ground {
+        background-color: #e0c068; }
+      #gym-details .raid .move .type.steel {
+        background-color: #b8b8d0; }
+      #gym-details .raid .move .type.dragon {
+        background-color: #7038f8; }
+      #gym-details .raid .move .type.poison {
+        background-color: #a040a0; }
+      #gym-details .raid .move .type.psychic {
+        background-color: #f85888; }
+      #gym-details .raid .move .type.dark {
+        background-color: #705848; }
 
 /* Banner */
 #banner {
@@ -4300,6 +4384,7 @@ html, body {
   text-decoration: none;
   position: fixed;
   left: 50%;
+  cursor: pointer;
   margin-left: -15px;
   bottom: 1.5em; }
   #scan-here:before {
@@ -4407,8 +4492,15 @@ html, body {
 .raid {
   color: #5d6d7e;
   font-size: 11px;
-  font-weight: 900;
-  margin-bottom: 5px; }
+  font-weight: 900; }
+  .raid.container {
+    display: flex;
+    justify-content: center; }
+    .raid.container.content-left {
+      width: 64px; }
+    .raid.container.content-right {
+      margin-bottom: auto;
+      margin-top: auto; }
   .raid.countdown:before {
     content: '\f017';
     display: inline-block;
@@ -4417,12 +4509,61 @@ html, body {
     height: 16px;
     width: 16px;
     -webkit-font-smoothing: antialiased; }
-  .raid.encounter {
-    font-weight: 500; }
-    .raid.encounter.info {
-      font-weight: 900; }
-    .raid.encounter.pokemon.name {
-      font-size: 13px; }
+  .raid.pokemon {
+    font-size: 12px;
+    font-weight: 900;
+    float: left; }
+  .raid .move .name {
+    font-size: 12px;
+    float: left;
+    clear: left;
+    margin: 5px 0px 0px 10px; }
+  .raid .move .type {
+    margin: 5px 0px 0px 10px;
+    font-size: 8px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 2px 3px;
+    border-radius: 4px;
+    color: white;
+    float: right;
+    clear: right; }
+    .raid .move .type.fairy {
+      background-color: #e898e8; }
+    .raid .move .type.ghost {
+      background-color: #705898; }
+    .raid .move .type.normal {
+      background-color: #8a8a59; }
+    .raid .move .type.grass {
+      background-color: #78c850; }
+    .raid .move .type.water {
+      background-color: #6890f0; }
+    .raid .move .type.bug {
+      background-color: #a8b820; }
+    .raid .move .type.fighting {
+      background-color: #c03028; }
+    .raid .move .type.electric {
+      background-color: #f8d030; }
+    .raid .move .type.rock {
+      background-color: #b8a038; }
+    .raid .move .type.fire {
+      background-color: #f08030; }
+    .raid .move .type.flying {
+      background-color: #a890f0; }
+    .raid .move .type.ice {
+      background-color: #98d8d8; }
+    .raid .move .type.ground {
+      background-color: #e0c068; }
+    .raid .move .type.steel {
+      background-color: #b8b8d0; }
+    .raid .move .type.dragon {
+      background-color: #7038f8; }
+    .raid .move .type.poison {
+      background-color: #a040a0; }
+    .raid .move .type.psychic {
+      background-color: #f85888; }
+    .raid .move .type.dark {
+      background-color: #705848; }
 
 .pokestop {
   font-size: 14px;
